@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Naveen Portfolio | Design Engineer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&amp;family=Inter:wght@300;400;600&amp;family=Space_Grotesk:wght@300;500;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-container": "#00e3fd",
+              "surface-variant": "#1a469a",
+              "error-container": "#881f05",
+              "on-tertiary-fixed": "#003840",
+              "on-surface-variant": "#e0e7ff",
+              "on-secondary": "#ffffff",
+              "on-tertiary-fixed-variant": "#005762",
+              "on-secondary-container": "#ffffff",
+              "secondary-dim": "#f0c6ff",
+              "surface-bright": "#2559c5",
+              "primary-dim": "#87aa00",
+              "primary-container": "#cafd00",
+              "surface-container-high": "#113886",
+              "on-error-container": "#ff9b82",
+              "secondary-fixed": "#f6d9ff",
+              "on-tertiary": "#005762",
+              "outline": "#8ba4d8",
+              "on-secondary-fixed-variant": "#8d22c0",
+              "primary-fixed": "#c3f400",
+              "inverse-on-surface": "#ffffff",
+              "surface-container-low": "#0d3175",
+              "inverse-surface": "#faf8ff",
+              "on-background": "#ffffff",
+              "surface-container-lowest": "#08265e",
+              "background": "#0e3a93",
+              "tertiary-dim": "#00d4ec",
+              "surface-dim": "#0e3a93",
+              "error": "#fe7453",
+              "outline-variant": "#3f6bc4",
+              "primary": "#f3ffca",
+              "on-primary-fixed": "#354500",
+              "secondary": "#ffffff",
+              "on-primary-container": "#4a5e00",
+              "tertiary-fixed": "#00e3fd",
+              "inverse-primary": "#516700",
+              "surface-container": "#113886",
+              "surface-tint": "#f3ffca",
+              "tertiary-fixed-dim": "#00d4ec",
+              "on-surface": "#ffffff",
+              "on-error": "#450900",
+              "surface": "#0e3a93",
+              "surface-container-highest": "#1a469a",
+              "tertiary": "#81ecff",
+              "secondary-container": "#0d3175",
+              "secondary-fixed-dim": "#f0c6ff",
+              "on-primary": "#516700",
+              "primary-fixed-dim": "#b7e500",
+              "error-dim": "#c74c2f",
+              "on-secondary-fixed": "#ffffff",
+              "on-tertiary-container": "#004d57",
+              "on-primary-fixed-variant": "#4e6300"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 80% 20%, #1a469a 0%, #0e3a93 100%);
+        }
+        .text-stroke {
+            -webkit-text-stroke: 1px #ffffff;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-[#0e3a93]/80 backdrop-blur-xl docked full-width top-0 sticky z-50 no-border flat no shadows border-b border-white/10">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-[1440px] mx-auto">
+<div class="text-2xl font-black tracking-tighter text-white font-['Manrope']">Naveen Portfolio</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="font-['Manrope'] font-bold tracking-tighter text-white opacity-80 hover:text-[#cafd00] transition-colors duration-300" href="#about">About</a>
+<a class="font-['Manrope'] font-bold tracking-tighter text-white opacity-80 hover:text-[#cafd00] transition-colors duration-300" href="#skills">Skills</a>
+<a class="font-['Manrope'] font-bold tracking-tighter text-white opacity-80 hover:text-[#cafd00] transition-colors duration-300" href="#projects">Projects</a>
+<a class="font-['Manrope'] font-bold tracking-tighter text-white opacity-80 hover:text-[#cafd00] transition-colors duration-300" href="#contact">Contact</a>
+
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center pt-20 pb-32 px-8 overflow-hidden hero-gradient">
+<div class="max-w-[1440px] mx-auto w-full grid grid-cols-12 gap-8 items-center">
+<div class="col-span-12 lg:col-span-8 z-10">
+<h1 class="font-headline font-extrabold text-7xl md:text-9xl leading-[0.85] tracking-tighter uppercase text-white">
+                        Design <span class="text-primary-container italic">Engineer</span> <br/>
+<span class="text-stroke">Bridging</span> <br/>
+<span class="pl-12 md:pl-24">Design & Code.</span>
+</h1>
+<div class="mt-12 ml-4 md:ml-32 max-w-md">
+<p class="text-xl md:text-2xl font-light text-on-surface-variant leading-relaxed">
+  Hi, I'm Naveen a design engineer rooted in graphic and UI/UX design, with a strong grip on front-end development. I turn high-fidelity designs into polished, accessible, and high-performance web experiences.
+</p>
+<div class="mt-10 flex gap-6">
+<button class="bg-primary-container text-on-primary-container px-8 py-4 font-headline font-extrabold rounded-sm flex items-center gap-3">
+   <a href="#projects">View Projects</a>
+</button>
+<button class="border border-white/30 text-white px-8 py-4 font-headline font-extrabold rounded-sm hover:bg-white/10 transition-colors">
+  Download Resume
+</button>
+</div>
+</div>
+</div>
+<!-- Off-center visual -->
+<div class="absolute right-[-10%] top-[10%] w-1/2 h-[80%] opacity-40 lg:opacity-100 pointer-events-none">
+<div class="relative w-full h-full">
+<img alt="" class="w-full h-full object-cover grayscale brightness-125 contrast-125 mix-blend-overlay" data-alt="abstract 3d fluid shapes with neon green and deep purple highlights on a dark obsidian background, high-end digital art style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArShyhZohdGzXpKpu-4bLS1l4oelhoQdDpbcphpAi2wOR-YI8l57Wm2o3rYiyaf8EB819rrAG1XIDH2SBu86WZl2JfWsozngSS-NNdTzh6skEfr2UjoGDkP8E9FKKwYCBQ69tDEpBLC6p2IceJZfvOMsOiIhF7DzQmMu_vy_GirncabvLZT4z89M1pFu6AuV3uyCFd6ZiY3sm8r-Q2wyFrrh8clDGdRYhh-VOB_YDXoUYNr6CQv40psmAB-zDjy8292jWr6dA75HMC"/>
+<div class="absolute inset-0 bg-gradient-to-l from-transparent via-background/40 to-background"></div>
+</div>
+</div>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute bottom-10 left-10 opacity-40 hidden md:block">
+<span class="material-symbols-outlined text-8xl text-primary-container">deployed_code</span>
+</div>
+</section>
+<!-- About Section (01 / About) -->
+<section class="py-32 px-8 bg-surface-container-low" id="about">
+<div class="max-w-[1440px] mx-auto grid grid-cols-12 gap-8">
+<div class="col-span-12 md:col-span-2">
+<span class="font-label text-sm tracking-[0.2em] text-primary-container uppercase">01 / About</span>
+</div>
+<div class="col-span-12 md:col-span-6 md:col-start-4">
+<h2 class="font-headline text-5xl font-bold mb-12 text-white">Designing with disciplined chaos.</h2>
+<div class="space-y-8 font-body text-lg text-on-surface-variant leading-relaxed max-w-2xl">
+<p>I'm a UI/UX designer who enjoys turning complex ideas into simple and easy-to-use designs. I focus on understanding how users think and creating interfaces that feel natural and clear.</p>
+<p>I've worked on mobile apps, dashboards, and web platforms, and I like making sure designs are not only visually clean but also practical to build.</p>
+<p>I'm always learning and improving my design process to create better user experiences.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section (02 / Skills) -->
+<section class="py-32 px-8 bg-background" id="skills">
+<div class="max-w-[1440px] mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-24">
+<div>
+<span class="font-label text-sm tracking-[0.2em] text-primary-container uppercase">02 / Skills</span>
+<h2 class="font-headline text-6xl font-extrabold mt-4 text-white">The Toolkit</h2>
+</div>
+<p class="font-body text-on-surface-variant max-w-xs mt-8 md:mt-0">Merging raw energy with technical precision across the entire design cycle.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+<!-- Design -->
+<div class="bg-surface-container-high p-10 flex flex-col justify-between min-h-[300px] hover:bg-surface-bright transition-colors group">
+<span class="material-symbols-outlined text-primary-container text-4xl group-hover:scale-110 transition-transform">category</span>
+<div>
+<h3 class="font-headline text-2xl font-bold mb-4 text-white">Design</h3>
+<ul class="font-label text-xs space-y-2 opacity-80 text-white/60">
+<li>UI Design</li>
+<li>UX Research</li>
+<li>Interaction Design</li>
+<li>Design Systems</li>
+</ul>
+</div>
+</div>
+<!-- Tools -->
+<div class="bg-surface-container p-10 md:col-span-2 flex flex-col justify-between min-h-[300px] border-l-4 border-primary-container">
+<span class="material-symbols-outlined text-primary-container text-4xl">architecture</span>
+<div>
+<h3 class="font-headline text-2xl font-bold mb-4 text-white">Tools</h3>
+<ul class="font-label text-xs space-y-2 opacity-80 text-white/60">
+<li>Figma</li>
+<li>Adobe Illustrator</li>
+<li>Photoshop</li>
+<li>Miro</li>
+</ul>
+</div>
+</div>
+<!-- Dev Basics -->
+<div class="bg-surface-container-high p-10 flex flex-col justify-between min-h-[300px] hover:bg-surface-bright transition-colors group">
+<span class="material-symbols-outlined text-white text-4xl group-hover:scale-110 transition-transform">terminal</span>
+<div>
+<h3 class="font-headline text-2xl font-bold mb-4 text-white">Dev Basics</h3>
+<ul class="font-label text-xs space-y-2 opacity-80 text-white/60">
+<li>HTML / CSS</li>
+<li>JavaScript (Basic)</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section (03 / Projects) -->
+<section class="py-32 px-8 bg-surface-container-low" id="projects">
+<div class="max-w-[1440px] mx-auto">
+<div class="mb-24">
+<span class="font-label text-sm tracking-[0.2em] text-primary-container uppercase">03 / Projects</span>
+<h2 class="font-headline text-6xl font-extrabold mt-4 text-white">Selected Works</h2>
+</div>
+<!-- Featured Project -->
+<div class="grid grid-cols-12 gap-0 mb-32 items-stretch">
+<div class="col-span-12 lg:col-span-7 relative overflow-hidden group h-[500px]">
+<img alt="Featured Project" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern mobile app interface mockup for a fintech platform with dark mode UI, neon green accents, and minimalist charts" src="/semina
+a.jpeg"/>
+<div class="absolute inset-0 bg-[#0e3a93]/30 group-hover:bg-transparent transition-colors"></div>
+</div>
+<div class="col-span-12 lg:col-span-5 bg-surface-container-high p-12 lg:p-20 flex flex-col justify-center">
+<span class="font-label text-xs text-primary-container mb-4 tracking-[0.3em]">EDTECH</span>
+<h3 class="font-headline text-4xl font-extrabold mb-6 leading-tight text-white">
+  Semina
+</h3>
+<p class="font-body text-on-surface-variant mb-10 leading-relaxed">
+  Semina is an AI-powered urban gardening assistant that helps users grow plants successfully in small spaces like apartments and balconies.
+</p>
+<div class="flex gap-4">
+<button class="bg-primary-container text-on-primary-container px-6 py-3 font-headline font-bold rounded-sm text-sm"> <a href="https://seminaca.vercel.app/">Explore</a></button>
+<button class="border border-white/30 text-white px-6 py-3 font-headline font-bold rounded-sm text-sm hover:bg-white/10">Live Demo</button>
+</div>
+</div>
+</div>
+<!-- Project Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Project 2 -->
+<div class="group">
+<div class="aspect-video overflow-hidden mb-8 relative bg-[#08265e]">
+<img alt="Project Two" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 mix-blend-luminosity hover:mix-blend-normal" data-alt="clean minimal e-commerce website design for high-end speakers, using bold typography and large negative space" src="/petcare.jpeg"/>
+<div class="absolute top-4 right-4 bg-primary-container text-on-primary-container px-3 py-1 font-label text-[10px] rounded-full">EDTECH</div>
+</div>
+<h4 class="font-headline text-2xl font-bold text-white">PetCare</h4>
+<p class="font-body text-sm text-on-surface-variant mt-2 mb-6">PetCare+ is a smart, all-in-one platform designed to simplify pet care for owners. Unlike traditional apps that only offer reminders, PetCare+ brings together health tracking, allergy management, diet and supplement planning, appointments, breed-specific guidance, and AI chat support in one place.</p>
+<button class="text-primary-container font-headline font-bold flex items-center gap-2 group">
+                          <a href="https://petcare-blond.vercel.app/#explore" target="_blank" rel="noopener noreferrer">  Explore <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward </span></a>
+</button>
+</div>
+<!-- Project 3 -->
+<div class="group md:mt-24">
+<div class="aspect-video overflow-hidden mb-8 relative bg-[#08265e]">
+<img alt="Project Three" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 mix-blend-luminosity hover:mix-blend-normal" data-alt="abstract portfolio design layout for an architect with high-contrast monochrome imagery and neon purple accents" src="/delista.jpeg"/>
+<div class="absolute top-4 right-4 bg-white text-[#0e3a93] px-3 py-1 font-label text-[10px] rounded-full">Food & Beverage Technology</div>
+</div>
+<h4 class="font-headline text-2xl font-bold text-white">Delista
+</h4>
+<p class="font-body text-sm text-on-surface-variant mt-2 mb-6">Delista is your smarter way to dine and serve: A free mobile-friendly menu experience for diners, and a powerful, paid menu management tool for restaurants.</p>
+<button class="text-primary-container font-headline font-bold flex items-center gap-2 group">
+                          <a href="https://wmdd-pj1-menu.web.app/diner/restaurants?landing=true" target="_blank" rel="noopener noreferrer">  Explore <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward </span></a>
+                            
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Resume Section (04 / Background) -->
+<section class="py-32 px-8 bg-background border-y border-white/10" id="resume">
+<div class="max-w-3xl mx-auto text-center">
+<span class="font-label text-sm tracking-[0.2em] text-primary-container uppercase">04 / Background</span>
+<h2 class="font-headline text-5xl font-extrabold mt-6 mb-8 text-white">Resume</h2>
+<p class="font-body text-on-surface-variant text-lg leading-relaxed mb-12">You can download my resume to learn more about my experience, education, and skills.</p>
+<button class="bg-primary-container text-on-primary-container px-10 py-5 font-headline font-extrabold rounded-sm text-lg hover:shadow-[0_0_40px_rgba(202,253,0,0.4)] transition-all flex items-center gap-4 mx-auto">
+                    Download Resume <span class="material-symbols-outlined">download</span>
+</button>
+</div>
+</section>
+<!-- Contact Section (05 / Connection) -->
+<section class="py-32 px-8 bg-surface-container-low" id="contact">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24">
+<div>
+<span class="font-label text-sm tracking-[0.2em] text-primary-container uppercase">05 / Connection</span>
+<h2 class="font-headline text-7xl font-extrabold mt-6 mb-12 text-white">Let's connect</h2>
+<div class="space-y-6">
+<div class="flex items-center gap-4 text-white/80 hover:text-primary-container transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-primary-container">mail</span>
+<span class="font-headline text-xl">naveen@example.com</span>
+</div>
+<div class="flex items-center gap-4 text-white/80 hover:text-primary-container transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-primary-container">share_location</span>
+<span class="font-headline text-xl">Vancouver / Remote</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container p-8 md:p-12 border border-white/10">
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="font-label text-[10px] tracking-widest uppercase opacity-50 text-white">Name</label>
+<input class="w-full bg-[#1a469a] border-none p-4 focus:ring-1 focus:ring-primary-container text-white placeholder-white/20" placeholder="Naveen Pal" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] tracking-widest uppercase opacity-50 text-white">Email</label>
+<input class="w-full bg-[#1a469a] border-none p-4 focus:ring-1 focus:ring-primary-container text-white placeholder-white/20" placeholder="naveenpal8410@gmail.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] tracking-widest uppercase opacity-50 text-white">Message</label>
+<textarea class="w-full bg-[#1a469a] border-none p-4 focus:ring-1 focus:ring-primary-container text-white placeholder-white/20" placeholder="Tell me about your project..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary-container text-on-primary-container py-4 font-headline font-extrabold rounded-sm uppercase tracking-widest" type="submit">
+                            Send Message
+                        </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#08265e] w-full py-12 px-8 no-border flat no shadows border-t border-white/5">
+<div class="flex flex-col md:flex-row justify-between items-center w-full max-w-[1440px] mx-auto space-y-8 md:space-y-0">
+<div>
+<div class="text-lg font-bold text-white font-['Space_Grotesk'] uppercase tracking-widest mb-2">Naveen Portfolio</div>
+<p class="font-['Space_Grotesk'] text-xs uppercase tracking-widest text-white/50">© 2026 Naveen Portfolio. All rights reserved.</p>
+</div>
+<div class="flex gap-12">
+<a class="font-['Space_Grotesk'] text-xs uppercase tracking-widest text-white/50 hover:opacity-100 hover:text-primary-container transition-all hover:translate-y-[-2px] duration-300" href="https://www.linkedin.com/in/naveen-pal-0a4513392/">LinkedIn</a>
+<a class="font-['Space_Grotesk'] text-xs uppercase tracking-widest text-white/50 hover:opacity-100 hover:text-primary-container transition-all hover:translate-y-[-2px] duration-300" href="https://github.com/orgs/PetCarePlus/people/npal01">GitHub</a>
+</div>
+</div>
+</footer>
+</body></html>
