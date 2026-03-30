@@ -91,6 +91,42 @@
             -webkit-text-stroke: 1px #ffffff;
             color: transparent;
         }
+        .hero-image {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .mobile-menu.active {
+            max-height: 300px;
+        }
+        .hamburger {
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .hamburger span {
+            width: 24px;
+            height: 2px;
+            background-color: white;
+            transition: all 0.3s ease;
+        }
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(10px, 10px);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
     </style>
 </head>
 <body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
@@ -103,7 +139,21 @@
 <a class="font-['Manrope'] font-bold tracking-tighter text-white opacity-80 hover:text-[#cafd00] transition-colors duration-300" href="#skills">Skills</a>
 <a class="font-['Manrope'] font-bold tracking-tighter text-white opacity-80 hover:text-[#cafd00] transition-colors duration-300" href="#projects">Projects</a>
 <a class="font-['Manrope'] font-bold tracking-tighter text-white opacity-80 hover:text-[#cafd00] transition-colors duration-300" href="#contact">Contact</a>
-
+</div>
+<button class="md:hidden hamburger" id="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
+<div class="md:hidden mobile-menu" id="mobileMenu">
+<div class="flex flex-col space-y-4 px-8 py-4 bg-[#0e3a93]/95">
+<a class="font-['Manrope'] font-bold text-white opacity-80 hover:text-[#cafd00] transition-colors duration-300" href="#about">About</a>
+<a class="font-['Manrope'] font-bold text-white opacity-80 hover:text-[#cafd00] transition-colors duration-300" href="#skills">Skills</a>
+<a class="font-['Manrope'] font-bold text-white opacity-80 hover:text-[#cafd00] transition-colors duration-300" href="#projects">Projects</a>
+<a class="font-['Manrope'] font-bold text-white opacity-80 hover:text-[#cafd00] transition-colors duration-300" href="#contact">Contact</a>
+</div>
+</div>
 </nav>
 <main>
 <!-- Hero Section -->
@@ -123,17 +173,11 @@
 <button class="bg-primary-container text-on-primary-container px-8 py-4 font-headline font-extrabold rounded-sm flex items-center gap-3">
    <a href="#projects">View Projects</a>
 </button>
-<button class="border border-white/30 text-white px-8 py-4 font-headline font-extrabold rounded-sm hover:bg-white/10 transition-colors">
+ <a href="Naveen_Kumar_Pal_Resume.pdf" download
+   class="border border-white/30 text-white px-8 py-4 font-headline font-extrabold rounded-sm hover:bg-white/10 transition-colors">
   Download Resume
-</button>
+</a>
 </div>
-</div>
-</div>
-<!-- Off-center visual -->
-<div class="absolute right-[-10%] top-[10%] w-1/2 h-[80%] opacity-40 lg:opacity-100 pointer-events-none">
-<div class="relative w-full h-full">
-<img alt="" class="w-full h-full object-cover grayscale brightness-125 contrast-125 mix-blend-overlay" data-alt="abstract 3d fluid shapes with neon green and deep purple highlights on a dark obsidian background, high-end digital art style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArShyhZohdGzXpKpu-4bLS1l4oelhoQdDpbcphpAi2wOR-YI8l57Wm2o3rYiyaf8EB819rrAG1XIDH2SBu86WZl2JfWsozngSS-NNdTzh6skEfr2UjoGDkP8E9FKKwYCBQ69tDEpBLC6p2IceJZfvOMsOiIhF7DzQmMu_vy_GirncabvLZT4z89M1pFu6AuV3uyCFd6ZiY3sm8r-Q2wyFrrh8clDGdRYhh-VOB_YDXoUYNr6CQv40psmAB-zDjy8292jWr6dA75HMC"/>
-<div class="absolute inset-0 bg-gradient-to-l from-transparent via-background/40 to-background"></div>
 </div>
 </div>
 </div>
@@ -270,13 +314,17 @@ a.jpeg"/>
 </section>
 <!-- Resume Section (04 / Background) -->
 <section class="py-32 px-8 bg-background border-y border-white/10" id="resume">
-<div class="max-w-3xl mx-auto text-center">
+<div class="max-w-md mx-auto text-center">
 <span class="font-label text-sm tracking-[0.2em] text-primary-container uppercase">04 / Background</span>
 <h2 class="font-headline text-5xl font-extrabold mt-6 mb-8 text-white">Resume</h2>
 <p class="font-body text-on-surface-variant text-lg leading-relaxed mb-12">You can download my resume to learn more about my experience, education, and skills.</p>
-<button class="bg-primary-container text-on-primary-container px-10 py-5 font-headline font-extrabold rounded-sm text-lg hover:shadow-[0_0_40px_rgba(202,253,0,0.4)] transition-all flex items-center gap-4 mx-auto">
+<!-- <button class="bg-primary-container text-on-primary-container px-10 py-5 font-headline font-extrabold rounded-sm text-lg hover:shadow-[0_0_40px_rgba(202,253,0,0.4)] transition-all flex items-center gap-4 mx-auto" href="Naveen_Kumar_Pal_Resume.pdf" download>
                     Download Resume <span class="material-symbols-outlined">download</span>
-</button>
+</button> -->
+<a href="Naveen_Kumar_Pal_Resume.pdf" download
+   class="bg-primary-container text-on-primary-container px-6 py-4 font-headline font-extrabold rounded-sm text-lg hover:shadow-[0_0_40px_rgba(202,253,0,0.4)] transition-all inline-flex items-center gap-3 mx-auto w-fit">
+  Download Resume <span class="material-symbols-outlined">download</span>
+</a>
 </div>
 </section>
 <!-- Contact Section (05 / Connection) -->
@@ -301,11 +349,11 @@ a.jpeg"/>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 <div class="space-y-2">
 <label class="font-label text-[10px] tracking-widest uppercase opacity-50 text-white">Name</label>
-<input class="w-full bg-[#1a469a] border-none p-4 focus:ring-1 focus:ring-primary-container text-white placeholder-white/20" placeholder="Naveen Pal" type="text"/>
+<input class="w-full bg-[#1a469a] border-none p-4 focus:ring-1 focus:ring-primary-container text-white placeholder-white/20" placeholder="example" type="text"/>
 </div>
 <div class="space-y-2">
 <label class="font-label text-[10px] tracking-widest uppercase opacity-50 text-white">Email</label>
-<input class="w-full bg-[#1a469a] border-none p-4 focus:ring-1 focus:ring-primary-container text-white placeholder-white/20" placeholder="Example@gmail.com" type="email"/>
+<input class="w-full bg-[#1a469a] border-none p-4 focus:ring-1 focus:ring-primary-container text-white placeholder-white/20" placeholder="example@gmail.com" type="email"/>
 </div>
 </div>
 <div class="space-y-2">
@@ -333,4 +381,22 @@ a.jpeg"/>
 </div>
 </div>
 </footer>
+<script>
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+});
+
+// Close menu when a link is clicked
+const mobileLinks = mobileMenu.querySelectorAll('a');
+mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        mobileMenu.classList.remove('active');
+    });
+});
+</script>
 </body></html>
